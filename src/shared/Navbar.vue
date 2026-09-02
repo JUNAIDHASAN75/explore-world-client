@@ -266,8 +266,9 @@ const toggleTheme = () => {
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-.brand:hover .nav-logo {
-  transform: scale(1.05);
+.brand:hover .nav-logo,
+.brand:hover .explore-world-logo-svg {
+  transform: scale(1.03);
 }
 .nav-center .nav-link { 
   color: #1f2937; 

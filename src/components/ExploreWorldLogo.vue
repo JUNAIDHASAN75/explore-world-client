@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" :height="height" width="auto" class="explore-world-logo-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 355 80" :height="height" width="auto" class="explore-world-logo-svg">
     <defs>
       <linearGradient :id="'primaryGrad_' + uid" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#0ea5e9" />
@@ -21,7 +21,7 @@
     </defs>
 
     <!-- Group Logo Icon -->
-    <g transform="translate(10, 5)">
+    <g transform="translate(8, 5)">
       <!-- Globe Circle Outer Glow -->
       <circle cx="35" cy="35" r="32" :fill="`url(#primaryGrad_${uid})`" opacity="0.15" />
       
@@ -49,17 +49,17 @@
 
     <!-- Typography -->
     <!-- "EXPLORE" - Pure White (#ffffff) in Night Mode / Dark background, Dark Slate (#0f172a) in Day mode -->
-    <text x="92" y="42" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="26" letter-spacing="0.5" class="explore-text-mark" :fill="exploreColor">
+    <text x="88" y="42" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="25" letter-spacing="0.5" class="explore-text-mark" :fill="exploreColor">
       EXPLORE
     </text>
     
     <!-- "WORLD" -->
-    <text x="215" y="42" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="26" letter-spacing="0.5" :fill="`url(#textGrad_${uid})`">
+    <text x="208" y="42" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="25" letter-spacing="0.5" :fill="`url(#textGrad_${uid})`">
       WORLD
     </text>
 
     <!-- Tagline -->
-    <text x="93" y="58" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="9.5" letter-spacing="2.5" :fill="`url(#accentGrad_${uid})`">
+    <text x="89" y="58" font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="9" letter-spacing="2" :fill="`url(#accentGrad_${uid})`">
       HOTELS &amp; TRAVEL BOOKING
     </text>
   </svg>
@@ -90,6 +90,7 @@ const exploreColor = computed(() => {
 .explore-world-logo-svg {
   display: block;
   transition: transform 0.3s ease;
+  overflow: visible;
 }
 
 /* CSS fallback for dark mode */
