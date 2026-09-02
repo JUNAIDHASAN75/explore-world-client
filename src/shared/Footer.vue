@@ -25,7 +25,7 @@
       <div class="row justify-content-center g-4 text-white py-4">
         <div class="col-md-4 col-lg-4 mb-4 mb-md-0">
           <div class="d-flex align-items-center mb-3">
-            <img class="footer-logo" src="../assets/images/logo.svg" alt="Explore World Logo" style="height: 60px; width: auto;">
+            <ExploreWorldLogo :height="60" :forceWhite="true" />
           </div>
           <ul class="list-unstyled mb-4">
             <li class="mb-2"><p class="small">302/1/A, South Monipur 1216 Dhaka,<br>Dhaka Division, Bangladesh.</p></li>
@@ -92,8 +92,13 @@
 </template>
 
 <script>
+import ExploreWorldLogo from '../components/ExploreWorldLogo.vue'
+
 export default {
   name: 'Footer',
+  components: {
+    ExploreWorldLogo
+  },
   data() {
     return {}
   },

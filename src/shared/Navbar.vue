@@ -4,7 +4,7 @@
       <!-- Left: Logo -->
       <div class="nav-left">
         <router-link to="/" class="brand d-flex align-items-center">
-          <img src="../assets/images/logo.svg" alt="Explore World Logo" class="nav-logo" style="height: 65px; width: auto;">
+          <ExploreWorldLogo :height="65" />
         </router-link>
       </div>
 
@@ -116,6 +116,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuth } from '../auth/authStore.js'
 import { useThemeStore } from '../stores/themeStore.js'
+import ExploreWorldLogo from '../components/ExploreWorldLogo.vue'
 
 const router = useRouter()
 const auth = useAuth()

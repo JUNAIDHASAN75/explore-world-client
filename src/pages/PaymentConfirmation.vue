@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="../assets/images/logo.svg" alt="Explore World" class="logo" style="height: 45px; width: auto;">
+            <ExploreWorldLogo :height="45" />
           </div>
           <div class="col-md-6">
             <div class="progress-steps d-flex justify-content-end">
@@ -331,6 +331,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import ExploreWorldLogo from '../components/ExploreWorldLogo.vue'
 
 const router = useRouter()
 const route = useRoute()
