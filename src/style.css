@@ -1,0 +1,41 @@
+:root {
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply Montserrat globally */
+* {
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+}
+
+html {
+  /* Enable smooth scrolling and optimize for performance */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  background-color: #ffffff;
+  color: #333333;
+  /* Performance optimizations for smooth scrolling */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
